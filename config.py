@@ -1,45 +1,98 @@
-# ==========================
-# BOT CONFIGURATION
-# ==========================
+"""
+BOT_V3 Configuration
+Version: 3.0
+"""
 
-# YouTube API
-YOUTUBE_API_KEY = "AIzaSyD03QCX30h71YU8Sbmbig8UjIZkOE_IQQg"
+# ==================================================
+# YOUTUBE API
+# ==================================================
 
-# Telegram
-TELEGRAM_TOKEN = "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"
-CHAT_ID = "-1003871590185"
+YOUTUBE_API_KEY = "YOUR_YOUTUBE_API_KEY"
 
-# ==========================
-# SEARCH SETTINGS
-# ==========================
+# ==================================================
+# TELEGRAM
+# ==================================================
+
+TELEGRAM_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
+
+CHANNEL_ID = "YOUR_CHANNEL_ID"
+
+# ==================================================
+# SEARCH KEYWORDS
+# ==================================================
 
 SEARCH_KEYWORDS = [
+
     "PUBG Mobile redeem code",
-    "PUBG Mobile redeem code today",
-    "PUBG Mobile official redeem code",
-    "PUBG Mobile redemption code",
+
+    "PUBG Mobile update",
+
+    "PUBG Mobile event",
+
+    "PUBG Mobile news",
+
+    "PUBG Mobile patch notes",
+
+    "PUBG Mobile official",
 
     "MLBB redeem code",
-    "MLBB redeem code today",
-    "Mobile Legends redeem code",
-    "Mobile Legends official redeem code"
+
+    "Mobile Legends update",
+
+    "Mobile Legends event",
+
+    "Mobile Legends news",
+
+    "Mobile Legends patch notes",
+
+    "Mobile Legends official"
+
 ]
 
-MAX_RESULTS = 25
-CHECK_INTERVAL = 3600
+# ==================================================
+# WEBSITE SOURCES
+# ==================================================
+
+WEBSITE_SOURCES = [
+
+    "https://www.pubgmobile.com",
+
+    "https://www.pubgmobile.com/news",
+
+    "https://m.mobilelegends.com",
+
+    "https://m.mobilelegends.com/news"
+
+]
+
+# ==================================================
+# RSS NEWS
+# ==================================================
+
+NEWS_SOURCES = [
+
+    "https://www.pubgmobile.com/rss.xml",
+
+    "https://m.mobilelegends.com/rss.xml"
+
+]
+
+# ==================================================
+# SCANNER
+# ==================================================
+
 REQUEST_TIMEOUT = 30
 
-# ==========================
+CHECK_INTERVAL = 1800
+
+MAX_RESULTS = 10
+
+# ==================================================
 # FILES
-# ==========================
+# ==================================================
 
-CODES_FILE = "scanner/codes.txt"
-OLD_CODES_FILE = "scanner/old_codes.txt"
-LOG_FILE = "scanner/bot.log"
+DATA_FOLDER = "data"
 
-# ==========================
-# BOT SETTINGS
-# ==========================
+CACHE_FOLDER = "cache"
 
-DEBUG = False
-SAVE_LOGS = True
+LOG_FOLDER = "logs"
